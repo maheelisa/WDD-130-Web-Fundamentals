@@ -23,3 +23,50 @@ main section {
 #background {
     height: 725px;
 }
+
+body {
+    background-color: #FBE497;
+    /* soft yellow as overall background */
+}
+
+header {
+    background-color: rgba(20, 30, 13, 0.7);
+    /* semi-transparent dark for contrast over hero image */
+}
+
+nav a:hover {
+    background-color: #adc181;
+    /* soft green when you hover */
+}
+
+.book,
+.join {
+    background-color: #7EC8E3;
+    /* light blue for buttons */
+    color: black;
+    /* good contrast */
+}
+
+.book:hover,
+.join:hover {
+    background-color: #adc181;
+    /* soft green hover effect */
+    color: black;
+}
+
+#background {
+    background-color: #adc181;
+    /* soft green background section */
+}
+
+.msg {
+    background-color: white;
+    /* clean white box for message */
+    color: black;
+}
+
+footer {
+    background-color: #7EC8E3;
+    /* light blue footer */
+    color: black;
+}
