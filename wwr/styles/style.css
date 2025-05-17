@@ -6,6 +6,7 @@
 nav a {
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 
 #hero-msg h1,
@@ -36,9 +37,9 @@ header {
 }
 
 nav a:hover {
-    background-color: #adc181;
+    background-color: #7EC8E3;
     color: #FBE497
-        /* soft green when you hover */
+        /* soft blue when you hover */
 }
 
 .book,
@@ -47,6 +48,7 @@ nav a:hover {
     /* light blue for buttons */
     color: black;
     /* good contrast */
+    text-decoration: none;
 }
 
 .book:hover,
@@ -86,6 +88,7 @@ h4 {
 
 footer a {
     color: black;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -102,4 +105,12 @@ footer a:hover {
 
 #hero-img {
     width: 100%;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2em;
 }
