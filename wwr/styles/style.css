@@ -179,12 +179,10 @@ main section img {
 }
 
 .mountains {
-    display: block;
-    /* removes small gap under images */
-    width: 800 x 533;
+    width: 800px;
     height: auto;
+    /* keeps the aspect ratio */
+    display: block;
     margin-top: 200px;
-    /* creates space above */
     margin-bottom: 200px;
-    /* creates space below */
 }
