@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
+
 #content {
+
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -28,6 +31,8 @@ main section {
 
 body {
     background-color: #FBE497;
+    font-family: Raleway Helvetica, Sans-serif;
+    font-size: 2em;
     /* soft yellow as overall background */
 }
 
@@ -49,6 +54,7 @@ nav a:hover {
     color: black;
     /* good contrast */
     text-decoration: none;
+    font-size: 18px;
 }
 
 .book:hover,
@@ -67,12 +73,22 @@ nav a:hover {
     background-color: white;
     /* clean white box for message */
     color: black;
+    line-height: 1.5em;
 }
 
 footer {
     background-color: #adc181;
     /* light blue footer */
     color: black;
+}
+
+.home-title,
+.msg h2 {
+    font-family: Orbitron, Verdana, sans-serif;
+}
+
+.msg p {
+    font-size: 0.8em;
 }
 
 .home-title,
