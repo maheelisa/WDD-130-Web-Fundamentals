@@ -183,8 +183,8 @@ main section img {
     /* removes small gap under images */
     width: 800 x 533;
     height: auto;
-    margin-top: 20px;
+    margin-top: 200px;
     /* creates space above */
-    margin-bottom: 20px;
+    margin-bottom: 200px;
     /* creates space below */
 }
