@@ -76,11 +76,12 @@ nav a:hover {
 }
 
 .msg {
-    background-color: white;
+    background-color: #adc181;
     /* clean white box for message */
     color: black;
     padding: 35px;
     line-height: 1.5em;
+
 }
 
 footer {
