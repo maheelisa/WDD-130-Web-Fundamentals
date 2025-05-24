@@ -32,7 +32,9 @@ main section {
 body {
     background-color: #FBE497;
     font-family: Raleway Helvetica, Sans-serif;
-    font-size: 2em;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
     /* soft yellow as overall background */
 }
 
@@ -86,6 +88,11 @@ footer {
 .msg h2 {
     font-family: Orbitron, Verdana, sans-serif;
 }
+
+h2 {
+    margin: 0;
+}
+
 
 .msg p {
     font-size: 0.8em;
