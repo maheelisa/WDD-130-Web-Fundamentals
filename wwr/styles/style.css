@@ -342,6 +342,68 @@ main section img {
     background-color: #5a593a !important;
 }
 
+/* ===== Contact Page Styles ===== */
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.contact-info ul {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 /*responsive desing#*/
 
