@@ -277,6 +277,72 @@ main section img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* ===== FAQ Page Styles ===== */
+
+.faq-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.faq-title {
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    font-size: 2em;
+    margin: 40px 0 20px;
+    color: black;
+}
+
+.faq-grid {
+    padding: 0 5%;
+}
+
+.faq-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.faq-left,
+.faq-right {
+    flex: 1 1 45%;
+}
+
+.faq-left h3,
+.faq-right h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.faq-left p,
+.faq-right p {
+    text-align: justify;
+    font-size: 0.95em;
+    line-height: 1.6em;
+}
+
+/* Optional: Center the Book Now button */
+.faq-grid .button-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-grid {
+    padding-top: 40px;
+}
+
+/* Footer override for FAQ page */
+.child-footer {
+    background-color: #5a593a !important;
+}
+
+
 /*responsive desing#*/
 
 @media screen and (max-width: 900px) {
