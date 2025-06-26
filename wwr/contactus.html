@@ -2,17 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Dry Oar Boating</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <style>
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 0.5em;
+            display: none;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
 </head>
 
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo" />
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -24,13 +40,13 @@
 
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/shadow.jpg" alt="mountains covered in shadows">
+                <img id="hero-img" src="images/shadow.jpg" alt="mountains covered in shadows" />
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">Contact Us</h1>
                 <h4>We would love to hear from you</h4>
-                <div class='button-box'>
-                    <a class='book' href="mailto:info@dryoarrafting.com">Email Us</a>
+                <div class="button-box">
+                    <a class="book" href="mailto:info@dryoarrafting.com">Email Us</a>
                 </div>
             </section>
         </div>
@@ -39,7 +55,8 @@
             <section class="contact-info">
                 <h1>Contact Dry Oar Rafting Co.</h1>
                 <p>Have questions? Want to book a trip? We would love to hear from you! Use the form below or reach out
-                    using the contact details. We will get back to you as soon as possible.</p>
+                    using
+                    the contact details. We will get back to you as soon as possible.</p>
 
                 <ul>
                     <li><strong>Email:</strong> infodryoarrafting@gmail.com</li>
@@ -49,15 +66,19 @@
             </section>
 
             <section class="contact-form">
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <!-- Feedback div -->
+                <div id="feedback"></div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <!-- Updated form with name and correct field names -->
+                <form name="userForm">
+                    <label for="user_name">Name:</label>
+                    <input type="text" id="user_name" name="user_name" required />
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" required />
+
+                    <label for="user_message">Message:</label>
+                    <textarea id="user_message" name="user_message" rows="5" required></textarea>
 
                     <button type="submit" class="book">Send Message</button>
                 </form>
@@ -70,17 +91,30 @@
             <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                    <img src="images/facebook.png" alt="fb icon" />
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
+                    <img src="images/twitter.png" alt="twitter icon" />
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
+                    <img src="images/instagram.png" alt="instagram icon" />
                 </a>
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript to handle form submission -->
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = 'block';
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 
 </html>
