@@ -130,8 +130,8 @@ nav a:hover {
 }
 
 .image-gallery img {
-    border: 5px solid #cfeffd;
-    /* pastel blue */
+    border: 5px solid var(--secondary-color);
+    /* instead of #A1B785 */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
@@ -206,8 +206,8 @@ main {
     margin: 2em auto;
     max-width: 90%;
     height: auto;
-    border: 5px solid var(--accent1-color);
-    /* pastel blue */
+    border: 5px solid var(--secondary-color);
+    /* green */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
@@ -240,8 +240,8 @@ main {
 .pricing-image-box img {
     width: 100%;
     height: auto;
-    border: 5px solid var(--accent1-color);
-    /* pastel blue */
+    border: 5px solid var(--secondary-color);
+    /* green */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 1em;
@@ -259,7 +259,7 @@ main {
 }
 
 .contact-box {
-    border: 1px solid #ccc;
+    border: 1px solid #A1B785;
     padding: 2em;
     width: 300px;
     background-color: #a1b785;
