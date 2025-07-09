@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@600&display=swap');
+
+:root {
+    --primary-color: #fdf9f1;
+    --secondary-color: #a1b785;
+    --accent1-color: #cfeffd;
+    --accent2-color: #cbae9e;
+
+    --heading-font: 'Edu NSW ACT Cursive', cursive;
+    --paragraph-font: 'Arial', sans-serif;
+    --text-color: #5A5A5A;
+}
+
+body {
+    margin: 0;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 1.5em;
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+
+.gallery {
+    padding: 3em 1em;
+}
+
+.gallery img {
+    max-width: 90%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    padding: 1em;
+    margin-top: 4em;
+    font-size: 0.9em;
+}
+
+.intro-text {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+    font-size: 1.2em;
+    line-height: 1.7;
+    text-align: justify;
+    color: var(--text-color);
+}

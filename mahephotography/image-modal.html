@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Modal Example</title>
+    <link rel="stylesheet" href="styles/modal-style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Elisa Mahe Photography</h1>
+    </header>
+
+    <main>
+        <section class="intro-text">
+            <p>
+                Hi! My name is Elisa and I was born and raised in Guatemala and now live in Utah, where the beauty of
+                the mountains, forests, and changing seasons constantly inspires my work. I have always been drawn to
+                both
+                people and nature, and that is reflected in my photography. I focus on two main styles: Portrait and
+                Landscape. Whether I am photographing a family, a couple, or a quiet sunset over the mountains, I try to
+                capture something honest and beautiful.
+            </p>
+            <p>
+                Photography has been a part of my life for over a decade. What began as a college course turned into a
+                deep passion that has shaped the way I see the world. During my first semester studying audiovisual
+                production, I held a professional camera for the first time and learned about composition, lighting, and
+                visual storytelling. I instantly fell in love with the creative process behind every image. Since then,
+                I have continued learning, practicing, and capturing meaningful moments through my lens.
+            </p>
+        </section>
+
+        <section class="gallery">
+            <p>Click the photo to enlarge</p>
+            <img id="myImg" src="Images/optimizedphoto8.jpg" alt="Portrait example" />
+
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" />
+                <div id="caption"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Elisa Mahe Photography</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("myModal");
+        const img = document.getElementById("myImg");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const span = document.getElementsByClassName("close")[0];
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
