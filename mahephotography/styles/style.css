@@ -240,7 +240,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 600px;
 }
 
 .pricing-image-box img {
@@ -275,6 +275,16 @@ main {
     font-family: var(--heading-font);
 }
 
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.7em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 /* ---------------------------------------------
    PORTFOLIO PAGE STYLES (portfolio.html)
